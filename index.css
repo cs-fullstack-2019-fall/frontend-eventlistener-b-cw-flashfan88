@@ -1,0 +1,33 @@
+#container{
+    display: grid;
+    grid-template-columns: 500px 3fr;
+    grid-template-rows: 100px 3fr auto;
+    grid-template-areas:
+            "title main"
+            "menu main"
+            "menu footer";
+}
+
+header{
+    grid-area: title;
+    background-color: crimson;
+}
+
+aside{
+    grid-area: menu;
+    background: saddlebrown;
+}
+
+section{
+    grid-area: main;
+    background-color: deepskyblue;
+}
+
+footer{
+    grid-area: footer;
+    background-color: rebeccapurple;
+}
+
+.yellowBackground{
+    background-color: yellow;
+}
